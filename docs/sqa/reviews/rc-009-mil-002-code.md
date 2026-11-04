@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-002 code deliverable (AI as stand-in for S01) | pending |
+| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-002 code deliverable (AI as stand-in for S01) | [39813c3] |
 
 ---
 
@@ -75,3 +75,4 @@ Changes made during the review: `Doxyfile` (removed the stray default `FILE_PATT
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [ADR-0001]: ../../adr/adr-0001-no-design-artifacts-for-a-one-class-script.md
 [RC-008]: rc-008-mil-001-code.md
+[39813c3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/39813c347ea5fb71ab746471b77a544bb4b7c600
