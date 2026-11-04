@@ -11,8 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | pending |
-| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Review RC-002 round 1 fixes: traced every concern to a Business Case objective (criterion 6); spelled out FURPS+ (QC-LANG-001 criterion 10) | pending |
+| 2026-11-04 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [2b623e7] |
+| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Review RC-002 round 1 fixes: traced every concern to a Business Case objective (criterion 6); spelled out FURPS+ (QC-LANG-001 criterion 10) | [2b623e7] |
 
 ---
 
@@ -78,3 +78,4 @@ Identify who is involved in the Day 51 speed-complaint bot, how much power and i
 ---
 
 [BC-001]: business-case.md
+[2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e

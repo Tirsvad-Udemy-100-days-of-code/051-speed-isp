@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | pending |
-| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Review RC-007 round 1 fixes: gave the reason each option was rejected (criterion 2); spelled out abbreviations (criterion 10); added quality-attribute impact (criterion 6); listed MIL-002, MIL-003 and QC-PY-001 as affected artifacts (criterion 7); accepted (AI as stand-in for S01) | pending |
+| 2026-11-04 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [2b623e7] |
+| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Review RC-007 round 1 fixes: gave the reason each option was rejected (criterion 2); spelled out abbreviations (criterion 10); added quality-attribute impact (criterion 6); listed MIL-002, MIL-003 and QC-PY-001 as affected artifacts (criterion 7); accepted (AI as stand-in for S01) | [2b623e7] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`, `Superseded by ADR-NNNN`.
 
@@ -57,3 +57,4 @@ Keep the four layer folders so that S02 and S03 see the structure, but write no 
 [MIL-002]: ../milestones/mil-002-speed-test.md
 [MIL-003]: ../milestones/mil-003-tweet-bot.md
 [QC-PY-001]: ../../framework/qc/code/qc-programming-python.md
+[2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e

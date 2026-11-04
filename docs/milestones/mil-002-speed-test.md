@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | [2b623e7] |
 
 ---
 
@@ -69,3 +69,4 @@ The class `InternetSpeedTwitterBot` in `src/` with `__init__` (Selenium driver, 
 
 [BC-001]: ../business-case.md
 [MIL-001]: mil-001-project-baseline.md
+[2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e

@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-11-04 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [2b623e7] |
 
 ---
 
@@ -86,3 +86,4 @@ MIL-001 → MIL-002 → MIL-003 → MIL-004. A No-Go on a gate stops the later g
 [MIL-002]: milestones/mil-002-speed-test.md
 [MIL-003]: milestones/mil-003-tweet-bot.md
 [MIL-004]: milestones/mil-004-wiki-screenshots.md
+[2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e

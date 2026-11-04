@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version: full review of BC-001, 2 rounds (AI as stand-in for S01) | pending |
+| 2026-11-04 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version: full review of BC-001, 2 rounds (AI as stand-in for S01) | [2b623e7] |
 
 ---
 
@@ -64,3 +64,4 @@ Go. All Mandatory criteria pass after two rounds (round 1 fixes recorded above).
 [BC-001]: ../../business-case.md
 [QC-BC-001]: ../../../framework/qc/artifacts/qc-business-case.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
+[2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e

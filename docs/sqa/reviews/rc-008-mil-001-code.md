@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-001 code deliverable (AI as stand-in for S01) | pending |
+| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-001 code deliverable (AI as stand-in for S01) | [2b623e7] |
 
 ---
 
@@ -71,3 +71,4 @@ Go. Row 5 verified (description and 8 topics set). Every Mandatory criterion of 
 
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [ADR-0001]: ../../adr/adr-0001-no-design-artifacts-for-a-one-class-script.md
+[2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e
