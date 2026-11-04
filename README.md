@@ -65,9 +65,18 @@ Leave the environment with `deactivate`. The folder `.venv/` is ignored by git.
 
 Set your promised speeds in `src/speed_isp/constants.py` (`PROMISED_DOWN`, `PROMISED_UP`). Credentials are read from environment variables and are never stored in the code; never commit them.
 
+Bash (the password is typed at a hidden prompt, so it never appears in a file or in the shell history):
+
 ```bash
-export Y_EMAIL="you@example.com"      # PowerShell: $env:Y_EMAIL = "you@example.com"
-export Y_PASSWORD="your-password"     # PowerShell: $env:Y_PASSWORD = "your-password"
+export Y_EMAIL="you@example.com"
+read -rs -p "Y password: " Y_PASSWORD && export Y_PASSWORD
+```
+
+PowerShell:
+
+```powershell
+$env:Y_EMAIL = "you@example.com"
+$env:Y_PASSWORD = Read-Host -MaskInput "Y password"
 ```
 
 For X use `TWITTER_EMAIL`, `TWITTER_PASSWORD` and `SPEED_ISP_SERVICE=X`. Set `SPEED_ISP_PROVIDER` (for example `@Comcast`) to mention your provider.
