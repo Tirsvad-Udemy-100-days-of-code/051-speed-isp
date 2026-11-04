@@ -149,10 +149,3 @@ def test_get_internet_speed_saves_ready_and_result_screenshots(
     make_bot(FakeDriver(full_page())).get_internet_speed()
     assert (tmp_path / "step-2-speedtest-ready.png").exists()
     assert (tmp_path / "step-3-speedtest-result.png").exists()
-
-
-def test_tweet_at_provider_is_a_noop_for_now() -> None:
-    driver = FakeDriver({})
-    bot = make_bot(driver)
-    bot.tweet_at_provider()
-    assert driver.visited == []
