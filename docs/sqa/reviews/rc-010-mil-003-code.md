@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-003 code deliverable (AI as stand-in for S01) | pending |
+| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-003 code deliverable (AI as stand-in for S01) | [49188a0] |
 
 ---
 
@@ -82,3 +82,4 @@ Changes made during the review: `src/speed_isp/constants.py` (removed the unused
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [ADR-0001]: ../../adr/adr-0001-no-design-artifacts-for-a-one-class-script.md
 [RC-009]: rc-009-mil-002-code.md
+[49188a0]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/49188a04274c302937840e04e3b6a4d9450e473c
