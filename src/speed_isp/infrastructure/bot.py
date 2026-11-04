@@ -14,8 +14,10 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
 
 from speed_isp import constants
+from speed_isp.domain.complaint import compose_complaint
 from speed_isp.domain.speed import SpeedResult, parse_mbps
 from speed_isp.infrastructure.driver import create_driver
+from speed_isp.infrastructure.site_factory import create_site
 
 logger = logging.getLogger(__name__)
 
@@ -68,9 +70,25 @@ class InternetSpeedTwitterBot:
 
     def tweet_at_provider(self) -> None:
         """!
-        @brief Post the complaint (lecture step 4; implemented in MIL-003).
+        @brief Complain to the provider when the measured speed is below the
+               promise (lecture step 4).
+        @throws ValueError when a complaint is needed and constants.SERVICE is
+                neither "X" nor "Y", or the text is too long.
+        @throws MissingCredentialsError when the credentials are not set.
+        @throws LoginError when the login does not complete.
         """
-        logger.info("tweet_at_provider is not implemented yet")
+        result = SpeedResult(down=self.down, up=self.up)
+        promised_down, promised_up = constants.PROMISED_DOWN, constants.PROMISED_UP
+        if not result.is_below(promised_down, promised_up):
+            logger.info("Speed is not below the promise; no complaint needed")
+            return
+        text = compose_complaint(
+            result, promised_down, promised_up, constants.PROVIDER_HANDLE
+        )
+        site = create_site(self.driver, self.save_screenshot)
+        site.login()
+        site.post(text)
+        self.save_screenshot(constants.SCREENSHOT_TWEET_POSTED)
 
     def save_screenshot(self, name: str) -> None:
         """!

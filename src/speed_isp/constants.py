@@ -10,6 +10,12 @@ string and the bot refuses to log in with it.
 
 import os
 
+## Environment variable names of the credentials; shown in error messages, never the values.
+Y_EMAIL_ENV: str = "Y_EMAIL"
+Y_PASSWORD_ENV: str = "Y_PASSWORD"
+TWITTER_EMAIL_ENV: str = "TWITTER_EMAIL"
+TWITTER_PASSWORD_ENV: str = "TWITTER_PASSWORD"
+
 ## Promised (contract) download speed in Mbps. Change it to your own contract.
 PROMISED_DOWN: int = 150
 ## Promised (contract) upload speed in Mbps.
@@ -21,16 +27,16 @@ SERVICE: str = os.environ.get("SPEED_ISP_SERVICE", "Y").upper()
 ## Mock service Y login page.
 Y_LOGIN_URL: str = "https://app.100daysofpython.dev/services/y/login"
 ## Y account e-mail, from the environment.
-Y_EMAIL: str = os.environ.get("Y_EMAIL", "")
+Y_EMAIL: str = os.environ.get(Y_EMAIL_ENV, "")
 ## Y account password, from the environment.
-Y_PASSWORD: str = os.environ.get("Y_PASSWORD", "")
+Y_PASSWORD: str = os.environ.get(Y_PASSWORD_ENV, "")
 
 ## X login page.
 TWITTER_LOGIN_URL: str = "https://x.com/i/flow/login"
 ## X account e-mail, from the environment.
-TWITTER_EMAIL: str = os.environ.get("TWITTER_EMAIL", "")
+TWITTER_EMAIL: str = os.environ.get(TWITTER_EMAIL_ENV, "")
 ## X account password, from the environment.
-TWITTER_PASSWORD: str = os.environ.get("TWITTER_PASSWORD", "")
+TWITTER_PASSWORD: str = os.environ.get(TWITTER_PASSWORD_ENV, "")
 ## Optional provider handle to mention, for example "@Comcast"; empty for none.
 PROVIDER_HANDLE: str = os.environ.get("SPEED_ISP_PROVIDER", "")
 
@@ -69,5 +75,32 @@ SCREENSHOT_DIR: str = os.environ.get("SPEED_ISP_SCREENSHOT_DIR", "")
 ## Seconds to wait before a screenshot so page animations (fade-in) have finished.
 SCREENSHOT_SETTLE_SECONDS: float = 2.0
 
-## Longest allowed post, in characters.
-POST_MAX_LENGTH: int = 280
+## Name of the service value for X.
+SERVICE_X: str = "X"
+## Name of the service value for the practice service Y.
+SERVICE_Y: str = "Y"
+
+## Screenshot after opening the Y login page.
+SCREENSHOT_Y_LOGIN: str = "step-1-y-login.png"
+## Screenshot after opening the X login page.
+SCREENSHOT_X_LOGIN: str = "step-1-x-login.png"
+## Screenshot after the complaint has been posted.
+SCREENSHOT_TWEET_POSTED: str = "step-4-tweet-posted.png"
+
+## Y (verified on the site): login form fields and submit button.
+Y_EMAIL_SELECTOR: str = "#email"
+Y_PASSWORD_SELECTOR: str = "#password"
+Y_SUBMIT_SELECTOR: str = "button[type='submit']"
+## Y: inline composer (contenteditable) and post button.
+Y_COMPOSER_SELECTOR: str = "#tweet-compose"
+Y_POST_SELECTOR: str = "#post-btn"
+## Y: button of the cosmetic cookie banner.
+Y_COOKIE_BANNER_SELECTOR: str = "button[data-y-dismiss='y-cookie-banner']"
+
+## X selectors (best effort, NOT verified live).
+X_USERNAME_SELECTOR: str = "input[autocomplete='username']"
+X_NEXT_XPATH: str = "//span[text()='Next']"
+X_PASSWORD_SELECTOR: str = "input[name='password']"
+X_LOGIN_BUTTON_SELECTOR: str = "[data-testid='LoginForm_Login_Button']"
+X_COMPOSER_SELECTOR: str = "[data-testid='tweetTextarea_0']"
+X_POST_SELECTOR: str = "[data-testid='tweetButtonInline']"
