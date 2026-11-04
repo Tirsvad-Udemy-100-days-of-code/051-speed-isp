@@ -8,7 +8,8 @@ version = "0.1.0"
 description = "Day 51 bot: measure internet speed on speedtest.net with Selenium and complain on X (or Y) when it is below the promised speed."
 readme = "README.md"
 requires-python = ">=3.13"
-license = { file = "LICENSE" }
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
 dependencies = [
     "selenium>=4.20",
 ]
@@ -19,7 +20,7 @@ test = [
 ]
 
 [project.scripts]
-speed-isp = "speed_isp.__main__:main"
+speed-isp = "speed_isp.presentation.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -31,6 +32,8 @@ pythonpath = ["src"]
 [tool.ruff]
 line-length = 88
 target-version = "py313"
+src = ["src", "tests"]
+extend-exclude = [".venv", "framework", "docs"]
 
 [tool.mypy]
 strict = true

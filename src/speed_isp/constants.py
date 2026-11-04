@@ -41,5 +41,33 @@ SPEEDTEST_TIMEOUT_SECONDS: int = 180
 ## Seconds to wait for an element on the social service.
 ELEMENT_TIMEOUT_SECONDS: int = 20
 
+## XPath of the "reject all" button of the speedtest.net cookie banner.
+SPEEDTEST_REJECT_COOKIES_XPATH: str = "//*[@id='onetrust-reject-all-handler']"
+## XPath of the button that starts the speed test.
+SPEEDTEST_GO_XPATH: str = "//button[starts-with(@aria-label, 'start speed test')]"
+## XPath of an element that only exists when the test has finished.
+SPEEDTEST_DONE_XPATH: str = "//*[normalize-space(text())='Result ID']"
+## XPath of the measured download speed.
+SPEEDTEST_DOWN_XPATH: str = (
+    "//p[starts-with(normalize-space(.), 'Download')]/following-sibling::h3"
+)
+## XPath of the measured upload speed.
+SPEEDTEST_UP_XPATH: str = (
+    "//p[starts-with(normalize-space(.), 'Upload')]/following-sibling::h3"
+)
+## Seconds to wait for the cookie banner before assuming there is none.
+COOKIE_BANNER_TIMEOUT_SECONDS: int = 5
+
+## True to run Chrome headless (set SPEED_ISP_HEADLESS to 1 or true).
+HEADLESS: bool = os.environ.get("SPEED_ISP_HEADLESS", "").lower() in {"1", "true"}
+## Path of the Chrome binary; empty to let Selenium find it.
+CHROME_BIN: str = os.environ.get("CHROME_BIN", "")
+## Path of the chromedriver binary; empty to let Selenium Manager find it.
+CHROMEDRIVER: str = os.environ.get("CHROMEDRIVER", "")
+## Folder for step screenshots; empty to take none.
+SCREENSHOT_DIR: str = os.environ.get("SPEED_ISP_SCREENSHOT_DIR", "")
+## Seconds to wait before a screenshot so page animations (fade-in) have finished.
+SCREENSHOT_SETTLE_SECONDS: float = 2.0
+
 ## Longest allowed post, in characters.
 POST_MAX_LENGTH: int = 280
