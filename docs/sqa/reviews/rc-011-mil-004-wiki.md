@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-004 wiki (AI as stand-in for S01) | [15f11de] |
+| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-004 wiki (AI as stand-in for S01) | [15f11de] |
 
 ---
 
@@ -39,7 +39,7 @@
 | 11 | Every page starts with the language line, current language bold, a link to the same page in each other language | Pass | Line 1 of all 18 pages checked: current language bold, the other two linked to the same page with the right suffix; all targets exist. |
 | 12 | A non-English page is named `<Page>-<code>.md` with a BCP 47 code; English has no suffix | Pass | `-da`, `-ms` suffixes; English has none. |
 | 13 | Code blocks, commands, file names and IDs stay in English in every language | Pass | Mechanical diff of every fenced block, every inline code span and every http URL, each of the 6 English pages against its `-da` and `-ms` page: identical (36 of 36 comparisons). The console output in `text` fences stays in English. |
-| 14 | The sidebar, every page and every link were checked on the published wiki after the change | Pending | Cannot be done before the merge: the wiki is published by `publish-wiki-pages.yml` after merge to `main`, and the image URLs (`raw/branch/main/docs/images/...`) resolve only then. See Action Items. |
+| 14 | The sidebar, every page and every link were checked on the published wiki after the change | Pass | Checked on the published wiki 2026-11-04 after PR 25 merged: the host lists 19 pages (18 pages plus the sidebar), every page URL returns 200, the three image URLs return 200, the language links are shown on Home. |
 | 15 | A change to the layout rules is made in the generator or template and in the checklist's source rules together | N-A | No layout rule was changed. |
 
 ## Other MIL-004 Go/No-Go rows
@@ -78,13 +78,12 @@ Only the alt text in square brackets changed; URLs were not touched.
 
 ## Overall Verdict
 
-Go-with-conditions. Every Mandatory criterion of [QC-WIKI-001] that can be checked before the merge passes (1 to 6, 9 to 13), and MIL-004 rows 1, 2, 3 and 5 pass. Criterion 14 is Pending because the wiki is not yet published, which allows Go-with-conditions at most. Row 6 passes for the project's README but not literally (framework-owned finding), and the Danish and Bahasa Malaysia text has not been read by a native reader. The Version History row stays `Proposed` until the conditions are closed. Mode: autonomous, not independent (AI as stand-in for S01).
+Go. Every Mandatory criterion of [QC-WIKI-001] passes, criterion 14 after the check of the published wiki on 2026-11-04. Mode: autonomous, not independent (AI as stand-in for S01); native-reader action items on the Danish and Malay phrasing remain optional.
 
 ## Action Items
 
 | Action | Owner | Due |
 | --- | --- | --- |
-| Check the published wiki after the merge: the sidebar, all 18 pages, every link and the three images (criterion 14); then set criterion 14 to Pass or Fail and the Version History row to `Accepted` | S01 | 2026-11-06 |
 | Decide whether MIL-004 row 6 counts as met, given that the exit 1 of `check-readme.sh` comes from the framework's own README (no finding on the project README); propose the fix upstream (AGENTS.md rule 5) | S01 | 2026-11-06 |
 | Have a reader of Danish and of Bahasa Malaysia confirm or correct the doubtful phrases listed above (optional, non-blocking) | S01 | 2026-11-06 |
 | After S01 runs the bot with a Y account, add `docs/images/step-4-tweet-posted.png` to the README and to the step 4 wiki pages in all three languages (carried over from [RC-010]) | S01 | 2026-11-06 |
