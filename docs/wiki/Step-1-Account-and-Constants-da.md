@@ -21,7 +21,7 @@ Y_LOGIN_URL: str = "https://app.100daysofpython.dev/services/y/login"
 
 ```bash
 export Y_EMAIL="you@example.com"
-export Y_PASSWORD="your-password"
+read -rs -p "Y password: " Y_PASSWORD && export Y_PASSWORD
 ```
 
 ## Hvad vi fik ud af det
