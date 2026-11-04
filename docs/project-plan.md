@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version | [2b623e7] |
+| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | [2b623e7] |
 
 ---
 
@@ -30,10 +30,10 @@ Schedule the four phases that deliver the Day 51 speed-complaint bot ([BC-001]) 
 
 | Gateway | Document | Window | Decision date | Owner | Stories | Main deliverable | Milestone |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| MIL-001 | [MIL-001] | 2026-11-04 | 2026-11-04 | S01 | none | Project baseline: repository metadata, `pyproject.toml`, `.gitignore`, `constants.py`, `Doxyfile`, README | |
-| MIL-002 | [MIL-002] | 2026-11-04 to 2026-11-05 | 2026-11-05 | S01 | none | Lecture steps 2 and 3: bot class and live speed measurement | |
-| MIL-003 | [MIL-003] | 2026-11-05 | 2026-11-05 | S01 | none | Lecture steps 1 and 4: login and tweet at the provider | |
-| MIL-004 | [MIL-004] | 2026-11-05 to 2026-11-06 | 2026-11-06 | S01 | none | README screenshots and three-language wiki | |
+| MIL-001 | [MIL-001] | 2026-11-04 | 2026-11-04 | S01 | none | Project baseline: repository metadata, `pyproject.toml`, `.gitignore`, `constants.py`, `Doxyfile`, README | [330](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/milestone/330) |
+| MIL-002 | [MIL-002] | 2026-11-04 to 2026-11-05 | 2026-11-05 | S01 | none | Lecture steps 2 and 3: bot class and live speed measurement | [331](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/milestone/331) |
+| MIL-003 | [MIL-003] | 2026-11-05 | 2026-11-05 | S01 | none | Lecture steps 1 and 4: login and tweet at the provider | [332](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/milestone/332) |
+| MIL-004 | [MIL-004] | 2026-11-05 to 2026-11-06 | 2026-11-06 | S01 | none | README screenshots and three-language wiki | [333](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/milestone/333) |
 
 ## Timeline diagram
 
@@ -76,6 +76,7 @@ MIL-001 → MIL-002 → MIL-003 → MIL-004. A No-Go on a gate stops the later g
 
 - Y (or X) credentials: the project reads `Y_EMAIL` and `Y_PASSWORD` from the environment. The AI does not create accounts or type passwords into pages. S01 supplies them in the environment, or takes the screenshots for the login and tweet steps.
 - "Python greater than 3.13" is read as 3.13 or newer (`requires-python = ">=3.13"`).
+- Screenshot of lecture step 4 (`docs/images/step-4-tweet-posted.png`) and the live tweet run (MIL-003 task 5, issue 15) are open until S01 runs the bot with their own Y account; the Docker run stops cleanly at the missing credentials (2026-11-04).
 - Live measurement and tweet runs use a headless browser in a Docker container, never the host desktop.
 
 ---
