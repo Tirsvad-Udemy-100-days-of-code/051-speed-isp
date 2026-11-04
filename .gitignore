@@ -1,0 +1,30 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Generated documentation and run output
+/docs/doxygen/
+/docs/ai-prompts/
+/out/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
