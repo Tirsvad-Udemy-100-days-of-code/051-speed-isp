@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-004 wiki (AI as stand-in for S01) | pending |
+| 2026-11-04 | Proposed | Jens Tirsvad Nielsen | S01 | Initial version; review of the MIL-004 wiki (AI as stand-in for S01) | [15f11de] |
 
 ---
 
@@ -94,3 +94,4 @@ Go-with-conditions. Every Mandatory criterion of [QC-WIKI-001] that can be check
 [MIL-004]: ../../milestones/mil-004-wiki-screenshots.md
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
 [RC-010]: rc-010-mil-003-code.md
+[15f11de]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/15f11de299844b5966aa05cfebdd4f079b60f414
