@@ -24,7 +24,9 @@ set the environment variables Y_EMAIL and Y_PASSWORD
 
 ## Tangkapan skrin tweet yang disiarkan
 
-Tangkapan skrin mesej yang disiarkan, `docs/images/step-4-tweet-posted.png`, ditulis apabila anda menjalankan bot dengan akaun Y anda sendiri dan `SPEED_ISP_SCREENSHOT_DIR` ditetapkan. Ia belum menjadi sebahagian daripada repositori: pemilik repositori masih perlu mengambilnya dengan kelayakan log masuk mereka sendiri.
+![Aduan sebagai siaran teratas di Y](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/raw/branch/main/docs/images/step-4-tweet-posted.png)
+
+Tangkapan skrin, `docs/images/step-4-tweet-posted.png`, datang daripada larian langsung dalam bekas Docker dengan akaun Y milik pemilik repositori (bot menulisnya apabila `SPEED_ISP_SCREENSHOT_DIR` ditetapkan). Siaran itu berbunyi: "Hey, why is my internet speed 93.5down/52.4up when I pay for 150down/10up?"
 
 ## Apa yang kami peroleh
 

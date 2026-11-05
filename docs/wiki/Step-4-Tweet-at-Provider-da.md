@@ -24,7 +24,9 @@ set the environment variables Y_EMAIL and Y_PASSWORD
 
 ## Skærmbillede af det udsendte opslag
 
-Skærmbilledet af den udsendte besked, `docs/images/step-4-tweet-posted.png`, skrives, når du kører botten med din egen Y-konto og har sat `SPEED_ISP_SCREENSHOT_DIR`. Det er endnu ikke en del af repositoriet: repositoriets forfatter skal stadig tage det med sine egne loginoplysninger.
+![Klagen som øverste opslag på Y](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/raw/branch/main/docs/images/step-4-tweet-posted.png)
+
+Skærmbilledet, `docs/images/step-4-tweet-posted.png`, stammer fra en live-kørsel i en Docker-container med forfatterens egen Y-konto (botten skriver det, når `SPEED_ISP_SCREENSHOT_DIR` er sat). Opslaget lyder: "Hey, why is my internet speed 93.5down/52.4up when I pay for 150down/10up?"
 
 ## Hvad vi fik ud af det
 

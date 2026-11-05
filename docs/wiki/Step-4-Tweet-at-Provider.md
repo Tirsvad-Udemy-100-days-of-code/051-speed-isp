@@ -24,7 +24,9 @@ set the environment variables Y_EMAIL and Y_PASSWORD
 
 ## Screenshot of the posted tweet
 
-The screenshot of the posted message, `docs/images/step-4-tweet-posted.png`, is written when you run the bot with your own Y account and `SPEED_ISP_SCREENSHOT_DIR` set. It is not part of the repository yet: the author of the repository still has to take it with their own credentials.
+![The complaint as the top post on Y](https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/raw/branch/main/docs/images/step-4-tweet-posted.png)
+
+The screenshot, `docs/images/step-4-tweet-posted.png`, comes from a live run in a Docker container with the author's own Y account (the bot writes it when `SPEED_ISP_SCREENSHOT_DIR` is set). The post reads: "Hey, why is my internet speed 93.5down/52.4up when I pay for 150down/10up?"
 
 ## What we gained
 
