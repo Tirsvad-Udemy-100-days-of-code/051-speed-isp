@@ -11,8 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | [2b623e7] |
 | 2026-11-05 | Accepted | Jens Tirsvad Nielsen | S01 | Open Issues: live run on Y done | [7e6cbe8] |
+| 2026-11-05 | Accepted | Jens Tirsvad Nielsen | S01 | Open Issues: X flow closed, no X account | [9c98c93] |
 
 ---
 
@@ -77,7 +77,7 @@ MIL-001 → MIL-002 → MIL-003 → MIL-004. A No-Go on a gate stops the later g
 
 - Y (or X) credentials: the project reads `Y_EMAIL` and `Y_PASSWORD` from the environment. The AI does not create accounts or type passwords into pages. S01 supplies them in the environment, or takes the screenshots for the login and tweet steps.
 - "Python greater than 3.13" is read as 3.13 or newer (`requires-python = ">=3.13"`).
-- The live tweet run on Y and the step 4 screenshot are done (2026-11-05; MIL-003 task 5, issue 15). The X flow and its selectors are still not verified live.
+- The live tweet run on Y and the step 4 screenshot are done (2026-11-05; MIL-003 task 5, issue 15). The X flow is closed without a live run: S01 has no X account and closed this item in chat (2026-11-05). The X selectors stay best effort and unverified; the practice service Y is the supported target.
 - Live measurement and tweet runs use a headless browser in a Docker container, never the host desktop.
 
 ---
@@ -90,3 +90,4 @@ MIL-001 → MIL-002 → MIL-003 → MIL-004. A No-Go on a gate stops the later g
 [MIL-004]: milestones/mil-004-wiki-screenshots.md
 [2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e
 [7e6cbe8]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/7e6cbe8cfb9770096a089ddbae025e63f7468d31
+[9c98c93]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/9c98c93f975d7b6b36ec2d7a2862db40fa794aef
