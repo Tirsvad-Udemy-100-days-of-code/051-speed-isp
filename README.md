@@ -106,7 +106,7 @@ The wiki (English, Danish and Bahasa Malaysia, in `docs/wiki/`) explains each st
 | 1. Account and constants: the login page of the practice service Y | ![Step 1](docs/images/step-1-y-login.png) |
 | 2. Create a class: the bot has opened speedtest.net | ![Step 2](docs/images/step-2-speedtest-ready.png) |
 | 3. Get internet speeds: the finished speed test | ![Step 3](docs/images/step-3-speedtest-result.png) |
-| 4. Tweet at the provider | Not yet taken: it needs your own Y account. Run the bot with `Y_EMAIL`, `Y_PASSWORD` and `SPEED_ISP_SCREENSHOT_DIR=docs/images` set and it writes `step-4-tweet-posted.png`. |
+| 4. Tweet at the provider: the complaint posted on Y | ![Step 4](docs/images/step-4-tweet-posted.png) |
 
 ## Live run in Docker
 
