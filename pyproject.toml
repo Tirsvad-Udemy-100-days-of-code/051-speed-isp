@@ -11,12 +11,12 @@ requires-python = ">=3.13"
 license = "AGPL-3.0-or-later"
 license-files = ["LICENSE"]
 dependencies = [
-    "selenium>=4.20",
+    "selenium==4.52.0",
 ]
 
 [project.optional-dependencies]
 test = [
-    "pytest>=8",
+    "pytest==9.2.0",
 ]
 
 [project.scripts]
