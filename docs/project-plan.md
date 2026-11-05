@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-05 | Accepted | Jens Tirsvad Nielsen | S01 | Open Issues: live run on Y done | [7e6cbe8] |
-| 2026-11-05 | Accepted | Jens Tirsvad Nielsen | S01 | Open Issues: X flow closed, no X account | pending |
+| 2026-11-05 | Accepted | Jens Tirsvad Nielsen | S01 | Open Issues: X flow closed, no X account | [9c98c93] |
 
 ---
 
@@ -90,3 +90,4 @@ MIL-001 → MIL-002 → MIL-003 → MIL-004. A No-Go on a gate stops the later g
 [MIL-004]: milestones/mil-004-wiki-screenshots.md
 [2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e
 [7e6cbe8]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/7e6cbe8cfb9770096a089ddbae025e63f7468d31
+[9c98c93]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/9c98c93f975d7b6b36ec2d7a2862db40fa794aef
