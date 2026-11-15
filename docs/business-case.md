@@ -4,15 +4,16 @@
 | Key | Value |
 | --- | --- |
 | ID | BC-001 |
-| CrossReference | [SA-001] |
+| CrossReference | [SA-001], [PP-001], [MIL-005] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-04 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [2b623e7] |
-| 2026-11-04 | Accepted | Jens Tirsvad Nielsen | S01 | Review RC-001 round 1 fixes: justified the qualitative benefits (criterion 1); lowered implementation detail to executive register (QC-LANG-001 criterion 4); spelled out abbreviations (QC-LANG-001 criterion 10) | [2b623e7] |
+| 2026-11-04 | Deprecated | Jens Tirsvad Nielsen | S01 | Review RC-001 round 1 fixes: justified the qualitative benefits (criterion 1); lowered implementation detail to executive register (QC-LANG-001 criterion 4); spelled out abbreviations (QC-LANG-001 criterion 10) | [2b623e7] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 7, a scope item, an out-of-scope item, two risks and a constraint for the baseline milestone MIL-005; set the domain to education; reviewed in autonomous mode, not independent | pending |
 
 ---
 
@@ -41,6 +42,7 @@ Automating the measure-and-complain loop turns a one-off frustration into eviden
 3. Log in to X (or Y) with Selenium and post a message that contains the measured and the promised speeds.
 4. Keep the repository runnable from its README, covered by automated tests, and with no runtime dependency except Selenium.
 5. Document every lecture step with a screenshot in the README and in a three-language wiki (English, Danish, Bahasa Malaysia) that explains what was learned.
+6. Bring the finished project to the common baseline of the framework: the adopted framework release, a README that lists only the documents of the repository and names the terms-of-use caveat, licence and project URL metadata, the editor settings of the baseline and an `.env.example` that also names the settings of the program ([MIL-005]).
 
 ## Scope
 
@@ -52,6 +54,7 @@ Automating the measure-and-complain loop turns a one-off frustration into eviden
 - Automated unit tests that need no browser and no network.
 - Wiki pages in en, da and ms, with a screenshot per lecture step.
 - Repository description and topics on the git host.
+- The baseline milestone [MIL-005]: the framework release, the README without the private framework files in its appendix, project URL metadata, `.editorconfig`, `.env.example`, review records and the Project Plan update. It changes no behaviour of the program.
 
 ### Out of Scope
 
@@ -59,6 +62,7 @@ Automating the measure-and-complain loop turns a one-off frustration into eviden
 - Solving CAPTCHAs or bypassing X's bot detection.
 - Storing or committing any credential or token.
 - A graphical user interface.
+- Any change to `src/`, `tests/`, `docker/Dockerfile` or the wiki pages in the baseline milestone [MIL-005]. That milestone starts no browser, opens no web page, runs no speed test, signs in to no site, posts nothing and runs no container; the tests use fakes.
 
 ## Expected Benefits
 
@@ -86,6 +90,7 @@ The project supports the course participant's goal of finishing the 100 Days of 
 | 4 | Wiki languages | 3 languages, same page set | `docs/wiki/` file list |
 | 5 | Secrets in repository | 0 | `git grep` for tokens; `.env` ignored |
 | 6 | Repository metadata | Description and at least 5 topics set | Git host repository page |
+| 7 | The baseline milestone is done (objective 6) | `framework/scripts/check-readme.sh`, `check-languages.sh` and `check-editorconfig.sh` exit with code 0, `python -m pytest` passes, 100 % of the continuous integration (CI) checks of the pull request of [MIL-005] pass | The script exit codes and the pull request status on the git host |
 
 ## Risks
 
@@ -96,6 +101,8 @@ The project supports the course participant's goal of finishing the 100 Days of 
 | Credentials leak into the repository | Account compromise | Read from environment variables only; `.env` in `.gitignore`; no value in tests, docs or logs |
 | No Y or X credentials are available for the live run | Screenshots of the login and tweet steps cannot be taken by the AI | Open issue: S01 supplies credentials in the environment, or takes those screenshots |
 | A live browser test disturbs the user's desktop | Interrupted work | Run the browser headless in a Docker container (`framework/process/gui-testing.md`) |
+| Automating a third-party service (speedtest.net, X) can break its terms of use | The reader's account may be blocked or limited | The README and the wiki say so in a neutral note; the practice service Y is the supported target; the reader reads the terms before running the bot |
+| The documents of the baseline milestone [MIL-005] change documents that were accepted earlier, and an AI stand-in for S01 reviews them | A defect is missed because the review is not independent | Every review record of the baseline says `Mode: autonomous, not independent`, `src/` and `tests/` are not changed, the tests run before and after, and the end-of-run summary lists the reviews for challenge |
 
 ## Assumptions
 
@@ -111,6 +118,8 @@ The project supports the course participant's goal of finishing the 100 Days of 
 - Avoid runtime dependencies unless needed.
 - The wiki exists in English, Danish and Bahasa Malaysia.
 - Tokens come from a private local environment file for personal use only; the project code and tests never read or import it.
+- The Product Owner (PO) language is English and the PO domain is education (it was IT until [MIL-005]; the documents that [MIL-005] does not change keep the domain `it`, see the Open Issues of [PP-001]).
+- The baseline milestone [MIL-005] starts 2026-11-16 and is finished within one week, by 2026-11-23. For that milestone only, an AI stand-in for S01 reviews and accepts the changed documents.
 
 ## Cost–Benefit Assessment
 
@@ -136,3 +145,5 @@ Proceed — the scope is small, the risks have mitigations and the result is dir
 
 [SA-001]: stakeholder-analysis.md
 [2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e
+[PP-001]: ./project-plan.md
+[MIL-005]: ./milestones/mil-005-framework-baseline.md

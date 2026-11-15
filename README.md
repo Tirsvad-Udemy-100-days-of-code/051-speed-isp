@@ -30,6 +30,9 @@ Folders:
 
 - `src/speed_isp/` - the code, in the layers `domain`, `application`, `infrastructure`, `presentation`; constants are in `constants.py`.
 - `tests/` - pytest tests (`unit`, `integration`, `e2e`); the unit tests need no browser and no network.
+- `framework/` - the SQA and QC framework (a git submodule) that the project documents follow.
+- `.editorconfig` - the editor settings of the framework baseline.
+- `.env.example` - placeholders for the git host tokens that the framework scripts read, and the settings of the program (accounts, provider, browser) as comments; the program reads them from the environment, not from `.env`.
 - `docs/` - project documents (Business Case, plan, milestones, reviews) and the wiki in English, Danish and Bahasa Malaysia (`docs/wiki/`).
 
 ## 📋 Requirements
@@ -79,7 +82,7 @@ $env:Y_EMAIL = "you@example.com"
 $env:Y_PASSWORD = Read-Host -MaskInput "Y password"
 ```
 
-For X use `TWITTER_EMAIL`, `TWITTER_PASSWORD` and `SPEED_ISP_SERVICE=X`. Set `SPEED_ISP_PROVIDER` (for example `@Comcast`) to mention your provider.
+For X use `TWITTER_EMAIL`, `TWITTER_PASSWORD` and `SPEED_ISP_SERVICE=X`. Set `SPEED_ISP_PROVIDER` (for example `@Comcast`) to mention your provider. Automating a third-party service such as speedtest.net or X may violate its terms of use: read them before you run the bot against it. The practice service Y is the supported target; the X flow is best effort and unverified.
 
 ## ▶️ Run
 
@@ -119,7 +122,7 @@ The image has a headless Chromium, so the run never opens a window on your deskt
 
 ## 📄 License
 
-See [LICENSE](./LICENSE).
+The project is licensed under the GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later); see the [LICENSE](./LICENSE) file.
 
 ## 🔗 Links
 
@@ -131,25 +134,19 @@ See [LICENSE](./LICENSE).
 
 | Document | What it tells you |
 | --- | --- |
-| [AGENTS.md][agents] | The rules AI agents follow in this repository |
 | [Business Case][BC-001] | Why the project exists, its scope and success criteria |
 | [Stakeholder Analysis][SA-001] | Who is involved; the stakeholder IDs used for owners and reviewers |
 | [Project Plan][PP-001] | The gateways and their schedule |
 | [Milestones][milestones] | One document per gateway: Go/No-Go criteria and tasks |
 | [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
-| [Framework README][framework-readme] | The framework this project uses |
-| [Framework changelog][framework-changelog] | What changed in each framework release |
 
 ---
 
 [repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp
 [documentation]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/wiki
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/issues
-[agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md
 [SA-001]: ./docs/stakeholder-analysis.md
 [PP-001]: ./docs/project-plan.md
 [milestones]: ./docs/milestones/
 [registry]: ./docs/artifact-registry.md
-[framework-readme]: ./framework/README.md
-[framework-changelog]: ./framework/CHANGELOG.md
