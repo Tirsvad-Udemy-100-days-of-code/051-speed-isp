@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial review record; verdict Go (autonomous, not independent) | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial review record; verdict Go (autonomous, not independent) | [5d274b7] |
 
 ---
 
@@ -72,3 +72,4 @@ Go — every Mandatory criterion of QC-PP-001 and QC-LANG-001 passes; the domain
 [PP-001]: ../../project-plan.md
 [QC-PP-001]: ../../../framework/qc/artifacts/qc-project-plan.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
+[5d274b7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/5d274b7c566f9670b6f792c7832440ea30e0d076

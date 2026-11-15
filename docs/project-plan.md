@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-05 | Deprecated | Jens Tirsvad Nielsen | S01 | Open Issues: live run on Y done | [7e6cbe8] |
 | 2026-11-05 | Deprecated | Jens Tirsvad Nielsen | S01 | Open Issues: X flow closed, no X account | [9c98c93] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-005 with its schedule row, scope coverage, dependency, risk and Gantt entries; recorded the move of the end date, the domain and the live-site rule in the Planning Assumptions and Open Issues; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-005 with its schedule row, scope coverage, dependency, risk and Gantt entries; recorded the move of the end date, the domain and the live-site rule in the Planning Assumptions and Open Issues; set the domain to education; reviewed in autonomous mode, not independent | [5d274b7] |
 
 ---
 
@@ -102,3 +102,4 @@ MIL-001 → MIL-002 → MIL-003 → MIL-004 → MIL-005. A No-Go on a gate stops
 [9c98c93]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/9c98c93f975d7b6b36ec2d7a2862db40fa794aef
 [MIL-005]: ./milestones/mil-005-framework-baseline.md
 [Milestone 570]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/milestone/570
+[5d274b7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/5d274b7c566f9670b6f792c7832440ea30e0d076

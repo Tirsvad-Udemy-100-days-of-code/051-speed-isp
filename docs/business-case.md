@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-04 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version | [2b623e7] |
 | 2026-11-04 | Deprecated | Jens Tirsvad Nielsen | S01 | Review RC-001 round 1 fixes: justified the qualitative benefits (criterion 1); lowered implementation detail to executive register (QC-LANG-001 criterion 4); spelled out abbreviations (QC-LANG-001 criterion 10) | [2b623e7] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 7, a scope item, an out-of-scope item, two risks and a constraint for the baseline milestone MIL-005; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 7, a scope item, an out-of-scope item, two risks and a constraint for the baseline milestone MIL-005; set the domain to education; reviewed in autonomous mode, not independent | [5d274b7] |
 
 ---
 
@@ -147,3 +147,4 @@ Proceed — the scope is small, the risks have mitigations and the result is dir
 [2b623e7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/2b623e74fbf13b90599da7d0c31a9ec38b19ef6e
 [PP-001]: ./project-plan.md
 [MIL-005]: ./milestones/mil-005-framework-baseline.md
+[5d274b7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/051-speed-isp/commit/5d274b7c566f9670b6f792c7832440ea30e0d076
